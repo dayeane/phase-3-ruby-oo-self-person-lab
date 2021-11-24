@@ -14,12 +14,12 @@ class Person
 
   def happiness=(num)
     @happiness = if num > 10
-                      10
-                    elsif num < 0
-                      0
-                    else
-                      num
-                    end
+                    10
+                 elsif num < 0
+                    0
+                 else
+                    num
+                 end
     
   end
 
@@ -76,5 +76,4 @@ class Person
       "blah blah blah blah blah"
     end
   end
-
 end
