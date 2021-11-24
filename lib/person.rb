@@ -12,25 +12,25 @@ class Person
     
   end
 
-  def happiness=(num)
-    @happiness = if num > 10
-                    10
-                 elsif num < 0
-                    0
-                 else
-                    num
-                 end
+  def happiness=(value)
+    if value >0 && value <= 10
+      @happiness = value
+    elsif value > 10
+        @happiness= 10
+    else value < 0
+        @happiness = 0
+    end
     
   end
 
-  def hygiene=(num)
-      @hygiene = if num > 10
-                    10
-                  elsif num < 0
-                    0
-                  else
-                    num
-                  end
+  def hygiene=(value)
+    if value >0 && value <= 10
+      @hygiene = value
+    elsif value > 10
+        @hygiene= 10
+    else value < 0
+        @hygiene = 0
+    end
   end
 
   def clean?
